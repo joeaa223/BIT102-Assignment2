@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Primary</title>
+
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+
+            h1{
+                color: blue;
+                font-weight: bold;
+                font-size: 50px;
+            }
+
+            .container{
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+                padding: 100px;
+                background-image: url("BG2.jpeg");
+            }
+
+            .slider-wrapper{
+                position: relative;
+                max-width: 48rem;
+                margin: 0 auto;
+            }
+
+            .slider{
+                display: flex;
+                aspect-ratio: 16/9;
+                overflow-x: hidden;
+                scroll-snap-type: x mandatory;
+                scroll-behavior: smooth;
+                box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+                border-radius: 0.5rem;
+            }
+
+            .slider img{
+                flex: 1 0 100%;
+                scroll-snap-align: start;
+                object-fit: cover;
+            }
+            
+            .slider-nav{
+                display: flex;
+                column-gap: 1rem;
+                position: absolute;
+                bottom: 1.25rem;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1;
+            }
+
+            .slider-nav a{
+                margin-bottom: 2rem;
+                width: 0.8rem;
+                height: 0.8rem;
+                border-radius: 50%;
+                background-color: white;
+                opacity: 75%;
+                transition: opacity ease 250ms;
+            }
+
+            .slider-nav a:hover{
+                opacity: 1;
+            }
+
+            .css1{
+                text-align: center;
+                color: rgb(108, 104, 104);
+            }
+
+            .css2{
+                display: flex;
+                gap:2rem;
+                text-align: center;
+                font-size: 15px;
+                
+                line-height: 1.5;
+                padding: 5em;
+                margin: auto;
+                width: 85em;
+            }
+
+            .css3{
+                background-color: #ff5432;
+                color: rgb(255, 255, 255);
+                padding-bottom: 2em;
+            }
+
+            .css4{
+                background-color: #ff5432;
+                color: rgb(255, 255, 255);
+            }
+
+            h2{
+                text-align: center;
+                display: block;
+                font-size: 24px;
+                color: rgb(81, 78, 78);
+                position: relative;
+            }
+
+            h2::before{
+                content: "";
+                display: block;
+                width: 800px;
+                height: 2px;
+                background-color: black;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                z-index: -2;
+            }
+
+            h2::after{
+                content: "";
+                display: block;
+                width: 800px;
+                height: 2px;
+                background-color: black;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                z-index: -2;
+            }
+
+            span{
+                background: white;
+                padding: 0.5em;
+            }
+
+
+            .ourclass{
+                display: flex;
+                flex-direction: row;
+                padding: 20px;
+                gap: 2em;
+                margin-bottom: 100px;
+            }
+
+            .reasonh{
+                text-align: center;
+                padding-bottom: 20px;
+            }
+
+            .reason{
+                font-size: 15px;
+                width: 80%;
+                margin: auto;
+                color: rgb(108, 104, 104);
+                padding-bottom: 70px;
+            }
+
+            .lined-heading {
+                border-bottom: 1px solid black;
+                padding-bottom: 5px; 
+                padding-top: 5px;
+            }
+
+            .reason2{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 80%;
+                gap: 4em;
+                justify-content: space-around;
+                margin: 0 20px;
+                text-align: center;
+            }
+
+            .reason3{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 80%;
+                gap: 4em;
+                justify-content: space-around;
+                margin: 0 20px;
+                text-align: center;
+            }
+
+            .reason2 div figcaption{
+                width: 60%;
+                text-align: center;
+            }
+
+            .reason3 div figcaption{
+                width: 60%;
+                text-align: center;
+            }
+
+            .reasonwrapper{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            
+</style>
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div>
+                <h1>PRIMARY<br>
+                    ENRICHMENT<br>
+                    YEAR 1 TO YEAR 6
+                </h1>
+            </div>
+            
+            <div class="slider-wrapper">
+
+                <div class="slider">
+                    <img id="slide1" src="image1.jpeg">
+                    <img id="slide2" src="image2.jpeg">
+                    <img id="slide3" src="image3.jpeg">
+                </div>
+
+                <div class="slider-nav">
+                    <a href="#slide1"></a>
+                    <a href="#slide2"></a>
+                    <a href="#slide3"></a>
+                </div>
+                
+            </div>
+    
+        </div>
+        
+        <p> <br> </p>
+        <p class="css1">English, Mathematics & Science Primary Enrichment Classes</p>
+
+        <div class="css2">
+            <div class="css3">
+                <img src="icon1.jpeg" width="400px" height="400px">
+                <h3>Year 1 to Year 6 Primary <br>Programme</h3>
+                <p>offers classes for children between<br>
+                    the ages of 3 to 13 years old. The programme<br>
+                    help students stay ahead of the peers in<br>
+                    primary school.
+                </p>
+            </div>
+            
+            <div>
+                <img src="icon2.jpeg" width="400px" height="400px">
+                <p>We get to know every child as an individual<br>
+                    and help them discover their highest<br>
+                    potential in <b>ENGLISH, MATHEMATICS &<br> 
+                    SCIENCES</b> using English as a primary<br> 
+                    medium.
+                </p>
+            </div>
+
+            <div class="css4">
+                <img src="icon3.jpeg" width="400px" height="400px">
+                <p>Our programmes stand out among other<br>
+                    teaching approaches when it comes to the<br>
+                    primary education as each child has<br>
+                    different strengths and weaknesses in<br>
+                    acquiring skills such as reading, writing and<br> 
+                    recognizing numbers.
+                </p> 
+            </div>
+        </div>
+           
+
+        <h2><span>Classes</span></h2>
+
+        <div class="ourclass">
+            <div>
+                <img src="ourclass1.jpeg">
+            </div>
+
+            <div>
+                <iframe width="420" height="345" src="https://youtu.be/QKnz0s3S5js"></iframe>
+            </div>
+        </div>
+
+        <h2 class="reasonh"><span>6 Reasons Parents Choose Us</span></h2>
+
+        <p class="reason">We are dedicated to build an eco-system where the students can be prepared for school in a joyous way and enjoy the classes they attend. The primary tuition programme provides a harmony 
+            between accelerated learning and fun. In this programme, we prepare students for the 21st century challenges.</p>
+        
+        <div class="reasonwrapper">
+            <div class="reason2">
+                <div>
+                    <img src="reason1.jpeg" width="150" height="150">
+                    <figcaption>Tuition Classes & Weekly Worksheets</figcaption>
+                </div>
+
+                <div>
+                    <img src="reason2.jpeg" width="150" height="150">
+                    <figcaption>Students Learn Step by Step with a Teacher Teaching</figcaption>
+                </div>
+
+                <div>
+                    <img src="reason3.jpeg" width="150" height="150">
+                    <figcaption>Physical and online tuition for primary school Malaysia</figcaption>
+                </div>
+            </div>
+        
+            <div class="reason3">
+                <div>
+                    <img src="reason4.jpeg" width="150" height="150">
+                    <figcaption>Checkpoint Exam Ready</figcaption>
+                </div>
+
+                <div>
+                    <img src="reason5.jpeg" width="150" height="150">
+                    <figcaption>Fully UK English Enrichment Program</figcaption>
+                </div>
+
+                <div>
+                    <img src="reason6.jpeg" width="150" height="150">
+                    <figcaption>School Entrance Exam & Preparation for International Secondary School</figcaption>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
