@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(location.jpg);
+    color: black;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ff5432;
+    color: white;   
+}
+
+ul {
+    list-style: none;
+    background-color: #ff5432;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background-color: #ff5432;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background-color: #f93811da;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#Locations {
+    background-color: #fff2e8;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.container dl {
+    flex: 1;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+    color: #fff;
+    font-size: 12px;
+    background-color: #ff5432;
+    padding: 1.5em;
+    font-weight: normal;
+}
+
+
+.footer-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    
+}
+
+
+.footer-nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-nav a:hover{
+    color: #cecece;
+}
+
