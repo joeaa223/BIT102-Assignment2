@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UEC Tuition Promo</title>
+    <style>
+         .banner{
+            width: auto;
+            height:auto;
+            background-image: linear-gradient(rgba(67, 67, 67, 0.75), rgba(67, 67, 67, 0.75)), url(background.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .navbar{
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo{
+            width: 120px;
+            cursor: pointer;
+        }
+
+        .image{
+            width: 750px;
+        }
+
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+
+        .navbar ul li a{
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .navbar ul li::after{
+            content: '';
+            height: 3px;
+            width: 0%;
+            background-color: #ff5432;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+
+        .navbar ul li:hover::after{
+            width: 100%;  
+
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .promo-container {
+            width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: block;
+            width: auto;
+            margin: 20px auto;
+            padding: 10px 20px;
+            text-align: center;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="logo.jpg" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="promo-container">
+            <img src="UEC.jpeg" class="image">
+            <h1>Introducing UEC's Revolutionary Tuition Program</h1>
+            <p>Are you tired of sky-high tuition fees holding you back from pursuing your dreams? Look no further! UEC is here to revolutionize the way you approach education and empower you to unleash your true potential without breaking the bank.</p>
+            <img src="UEC2.jpg" class="image">
+            <p>At UEC, we believe that education should be accessible to all, regardless of financial constraints. That's why we have designed a groundbreaking tuition program that will change the game for aspiring learners like you. Our goal is simple: to provide a top-quality education at an affordable price, making your dreams of personal and professional growth a reality.</p>
+            <p>With UEC's Tuition Program, you'll experience the perfect balance of affordability and excellence. Our expert faculty, comprised of industry-leading professionals and accomplished academics, will guide you through a comprehensive curriculum that blends theoretical knowledge with real-world applications. Whether you're interested in business, technology, healthcare, or any other field, UEC offers a wide range of programs tailored to suit your passions and career aspirations.</p>
+           <img src="UEC3.jpg" class="image">
+            <p>But what truly sets us apart is our commitment to your success. We understand that education is not limited to the classroom, which is why UEC provides a supportive and engaging learning environment both online and offline. Our innovative learning platforms and interactive virtual classrooms enable you to connect with instructors and fellow students from around the world, fostering a collaborative and enriching experience.</p>
+            <p>As a testament to our dedication to affordable education, UEC offers various financial assistance options, including scholarships, grants, and flexible payment plans. We believe that your financial circumstances should never stand in the way of your educational journey. UEC strives to make education accessible to everyone, irrespective of background or income.</p>
+            <img src="UEC4.jpg" class="image">
+            <p>Don't let financial constraints hinder your dreams any longer. Join the UEC community and unlock a world of possibilities. Together, we will redefine the way you learn, grow, and succeed.</p>
+            <a class="cta-button" href="#">Contact Us!</a>
+        </div>
+    </div>
+   
+</body>
+
+</html>
