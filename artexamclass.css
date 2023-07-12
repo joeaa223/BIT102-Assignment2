@@ -1,0 +1,396 @@
+body{
+    background-color: #fff2e8;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #fff2e8;
+    margin: 0 auto;
+    padding: 1em 0.5em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+
+.navbarlogo{
+    display: flex;
+    flex-direction: row; 
+    gap: 3em;
+    align-items: center;
+}
+
+.navbarlogo h2{
+    color: #ff5432;
+    font-size: 30px;
+    flex: 1;
+}
+
+.navbarlogo h2 span{
+    font-size: 12px;
+}
+
+.navbarcontent{
+    display: none;
+}
+
+
+.logo {
+    width: 50%;
+    height: auto;
+    cursor: pointer;
+    flex: 1;
+}
+
+
+.navbar ul li {
+    list-style: none; 
+    display: inline-block; 
+    margin: 0 20px; 
+    position: relative; 
+}
+
+
+.navbar ul li a {
+    text-decoration: none; 
+    color: #fff2e8; 
+    text-transform: uppercase; 
+}
+
+
+.navbar ul li::after {
+    content: ''; 
+    height: 3px;
+    width: 0%; 
+    background-color: #fff2e8; 
+    position: absolute; 
+    left: 0; 
+    bottom: -10px; 
+    transition: 0.5s; 
+}
+
+
+.navbar ul li:hover::after {
+    width: 100%; 
+}
+
+
+ul li {
+    display: inline-block; 
+    position: relative; 
+}
+
+
+ul li a {
+    display: block;
+    padding: 18px; 
+    text-decoration: none; 
+    text-align: center; 
+    font-size: 20px; 
+    color: white; 
+}
+
+
+ul li ul.dropdown li {
+    display: block; 
+}
+
+
+ul li ul.dropdown {
+    width: 100%;
+    position: absolute;  
+    display: none; 
+    z-index: 999;
+    right: 1px;
+}
+
+
+ul li:hover ul.dropdown {
+    display: block; 
+}
+
+
+h1{
+    background-image: url(orangeBG.jpeg);
+    padding: 2em;
+    color: #fff;
+    font-size: 4em;
+    width: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    line-height: 1.5;
+    gap: 1.5em;
+}
+
+.container p{
+    font-size: 12px;
+    color: #666;
+}
+
+.container div img{
+    max-width: 100%;
+}
+
+
+.lastwrapper{
+    padding-bottom: 3em;
+}
+
+.lastwrapper p{
+    line-height: 1.5;
+    padding-bottom: 0.8em;
+}
+
+
+.contactus{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #ff5432;
+    border-radius: 4px;
+    padding: 1em;
+    margin-bottom: 10em;
+}
+
+.contactus:hover{
+    background-color: #ff3e17;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    color: #fff;
+    font-size: 12px;
+    background-color: #ff5432;
+    padding: 1.5em;
+    font-weight: normal;
+}
+
+
+.footer-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+
+.footer-nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.footer-nav a:hover{
+    color: #cecece;
+}
+
+@media only screen and (min-width: 900px) {
+    body{
+        background-color: #fff2e8;
+        font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+        background-color: #fff2e8;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+    }
+    
+    .navbarlogo{
+        display: flex;
+        flex-direction: row;
+        gap: 3em;
+        align-items: center;
+        width: 600px;
+    }
+    
+    .navbarlogo h2{
+        color: #ff5432;
+        font-size: 30px;
+    }
+
+    .logo {
+        width: 50px;
+        height: auto; 
+        cursor: pointer;
+    }
+    
+    .navbarlogo h2 span{
+        font-size: 12px;
+    }
+    
+    .navbarcontent{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .navbar ul li {
+        list-style: none; 
+        display: inline-block; 
+        margin: 0 20px; 
+        position: relative; 
+    }
+    
+    
+    .navbar ul li a {
+        text-decoration: none; 
+        color: #ff5432; 
+        text-transform: uppercase; 
+    }
+    
+    
+    .navbar ul li::after {
+        content: ''; 
+        height: 3px;
+        width: 0%; 
+        background-color: #ff5432; 
+        position: absolute; 
+        left: 0; 
+        bottom: -10px; 
+        transition: 0.5s; 
+    }
+    
+    
+    .navbar ul li:hover::after {
+        width: 100%; 
+    }
+    
+    
+    ul li {
+        display: inline-block; 
+        position: relative; 
+    }
+    
+    
+    ul li a {
+        display: block;
+        padding: 18px; 
+        text-decoration: none; 
+        text-align: center; 
+        font-size: 20px; 
+        color: white; 
+    }
+    
+    
+    ul li ul.dropdown li {
+        display: block; 
+        background-color: #fff2e8;
+    }
+    
+    
+    ul li ul.dropdown {
+        width: 100%;
+        position: absolute;
+        padding: 10px;  
+        display: none; 
+        z-index: 999;
+        right: 1px;
+    }
+    
+    
+    ul li:hover ul.dropdown {
+        display: block; 
+        background-color: #fff2e8;
+    }
+    
+    h1{
+        background-image: url(orangeBG.jpeg);
+        padding: 2em;
+        color: #fff;
+        font-size: 4em;
+        width: auto;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 60%;
+        line-height: 1.5;
+        gap: 1.5em;
+    }
+    
+    .container p {
+        font-size: 15px;
+        line-height: 1.5;
+        color: #666;
+    }
+
+    .container div img{
+        max-width: 100%;
+    }
+    
+
+    
+    .lastwrapper{
+        padding-bottom: 3em;
+    }
+    
+    .lastwrapper p{
+        line-height: 1.5;
+        padding-bottom: 0.8em;
+    }
+    
+    
+    .contactus{
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        background-color: #ff5432;
+        border-radius: 4px;
+        padding: 1em;
+        margin-bottom: 10em;
+    }
+    
+    .contactus:hover{
+        background-color: #ff3e17;
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10em;
+        color: #fff;
+        font-size: 12px;
+        background-color: #ff5432;
+        padding: 1.5em;
+        font-weight: normal;
+    }
+    
+    
+    .footer-nav{
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+    }
+    
+    
+    .footer-nav a{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    
+    .footer-nav a:hover{
+        color: #cecece;
+    }
+}

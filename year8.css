@@ -1,0 +1,397 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #fff2e8;
+}
+
+
+.navbar {
+    width: 100%;
+    background-color: #ff5432;
+    margin: 0 auto;
+    padding: 1em 0.5em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+
+.navbarlogo{
+    display: flex;
+    flex-direction: row; 
+    gap: 3em;
+    align-items: center;
+}
+
+.navbarlogo h2{
+    color: #fff2e8;
+    font-size: 30px;
+    flex: 1;
+}
+
+.navbarlogo h2 span{
+    font-size: 12px;
+}
+
+.navbarcontent{
+    display: none;
+}
+
+
+.logo {
+    width: 50%;
+    height: auto;
+    cursor: pointer;
+    flex: 1;
+}
+
+
+.navbar ul li {
+    list-style: none; 
+    display: inline-block; 
+    margin: 0 20px; 
+    position: relative; 
+}
+
+
+.navbar ul li a {
+    text-decoration: none; 
+    color: #ff5432; 
+    text-transform: uppercase; 
+}
+
+
+.navbar ul li::after {
+    content: ''; 
+    height: 3px;
+    width: 0%; 
+    background-color: #ff5432; 
+    position: absolute; 
+    left: 0; 
+    bottom: -10px; 
+    transition: 0.5s; 
+}
+
+
+.navbar ul li:hover::after {
+    width: 100%; 
+}
+
+
+ul li {
+    display: inline-block; 
+    position: relative; 
+}
+
+
+ul li a {
+    display: block;
+    padding: 18px; 
+    text-decoration: none; 
+    text-align: center; 
+    font-size: 20px; 
+    color: white; 
+}
+
+
+ul li ul.dropdown li {
+    display: block; 
+}
+
+
+ul li ul.dropdown {
+    width: 100%;
+    position: absolute;  
+    display: none; 
+    z-index: 999;
+    right: 1px;
+}
+
+
+ul li:hover ul.dropdown {
+    display: block; 
+}
+
+summary{
+    cursor: pointer;
+    outline: none;
+}
+
+h3{
+    text-align: center;
+    padding: 50px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ff54320e;
+    padding: 20px;
+    line-height: 2.5;
+}
+
+summary{
+    font-size: 1.3em;
+    color: #666;
+    font-weight: bold;
+}
+
+
+details p{
+    line-height: 2;
+    color: #777;
+    font-size: 0.8em;
+}
+
+.wrapper{
+    width: 90%;
+    margin: 5em auto;
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wrapper .card{
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: center;
+    
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    color: #fff;
+    font-size: 12px;
+    background-color: #ff5432;
+    padding: 1.5em;
+    font-weight: normal;
+}
+
+
+.footer-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+
+.footer-nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.footer-nav a:hover{
+    color: #cecece;
+}
+
+
+@media only screen and (min-width: 900px) {
+    body{
+        font-family: Arial, sans-serif;
+        background-color: #fff2e8;
+    }
+
+    .navbar {
+        background-color: #ff5432;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+    }
+    
+    .navbarlogo{
+        display: flex;
+        flex-direction: row;
+        gap: 3em;
+        align-items: center;
+        width: 600px;
+    }
+    
+    .navbarlogo h2{
+        color: #fff2e8;
+        font-size: 30px;
+    }
+
+    .logo {
+        width: 50px;
+        height: auto; 
+        cursor: pointer;
+    }
+    
+    .navbarlogo h2 span{
+        font-size: 12px;
+    }
+    
+    .navbarcontent{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .navbar ul li {
+        list-style: none; 
+        display: inline-block; 
+        margin: 0 20px; 
+        position: relative; 
+    }
+    
+    
+    .navbar ul li a {
+        text-decoration: none; 
+        color: #fff2e8; 
+        text-transform: uppercase; 
+    }
+    
+    
+    .navbar ul li::after {
+        content: ''; 
+        height: 3px;
+        width: 0%; 
+        background-color: #fff2e8; 
+        position: absolute; 
+        left: 0; 
+        bottom: -10px; 
+        transition: 0.5s; 
+    }
+    
+    
+    .navbar ul li:hover::after {
+        width: 100%; 
+    }
+    
+    
+    ul li {
+        display: inline-block; 
+        position: relative; 
+    }
+    
+    
+    ul li a {
+        display: block;
+        padding: 18px; 
+        text-decoration: none; 
+        text-align: center; 
+        font-size: 20px; 
+        color: white; 
+    }
+    
+    
+    ul li ul.dropdown li {
+        display: block; 
+        background-color: #ff5432;
+    }
+    
+    
+    ul li ul.dropdown {
+        width: 100%;
+        position: absolute;
+        padding: 10px;  
+        display: none; 
+        z-index: 999;
+        right: 1px;
+    }
+    
+    
+    ul li:hover ul.dropdown {
+        display: block; 
+        background-color: #ff5432;
+    }
+
+    
+    summary{
+        cursor: pointer;
+        outline: none;
+    }
+    
+    h3{
+        text-align: center;
+        padding: 50px;
+    }
+    
+    .container{
+        width: 70%;
+        margin: 0 auto;
+        background-color: #ff54320e;
+        padding: 20px;
+        line-height: 2.5;
+    }
+    
+    summary{
+        font-size: 22px;
+        color: #666;
+        font-weight: bold;
+    }
+    
+    
+    details p{
+        line-height: 2;
+        color: #777;
+        font-size: 15px;
+    }
+    
+    .wrapper{
+        width: 90%;
+        margin: 5em auto;
+        display: flex;
+        flex-direction: row;
+        gap: 5em;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .wrapper .card{
+        min-width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        scroll-snap-align: center;
+        
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10em;
+        color: #fff;
+        font-size: 12px;
+        background-color: #ff5432;
+        padding: 1.5em;
+    }
+    
+    
+    .footer-nav{
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        
+    }
+    
+    .footer-nav a{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .footer-nav a:hover{
+        color: #cecece;
+    }
+}
