@@ -10,7 +10,7 @@ function validateForm() {
         return false
     }
 
-    else if(phone == null || phone == "" || phone != 10){
+    else if(phone == null || phone == "" || phone.length != 10){
         alert("Enter correct contact number format");
         return false;
     }
