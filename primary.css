@@ -753,7 +753,7 @@ footer{
         align-items: center;
         text-align: center;
         flex-wrap: wrap;
-        gap: 3em;
+        gap: 1.5em;
         margin: 3em auto;
     }
     
